@@ -21,7 +21,7 @@ recognition.onresult = function(event)
     var content = event.results[0][0].transcript;
 
     document.getElementById("status").innerHTML = "You said " + content;
-        if(content == "Circle")
+        if(content == "circle")
         {
             console.log("test");
             x = Math.floor(Math.random * 800);
@@ -30,7 +30,7 @@ recognition.onresult = function(event)
             drawCircle = "drawn";
         }
 
-        if(content == "Rectangle")
+        if(content == "rectangle")
         {
             console.log("test");
             x = Math.floor(Math.random * 800);
